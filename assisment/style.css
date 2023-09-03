@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: rgb(18, 116, 116);
+  /* background-color: transparent; */
+  color: white;
+}
+ul a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+}
+.Home {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 80%;
+  flex-direction: row-reverse;
+  /* margin: 100px; */
+}
+.Home img {
+  border-radius: 50%;
+
+  animation-name: image;
+  animation-duration: 46ms;
+  width: 20rem;
+  height: 20rem;
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+  box-shadow: -34px -27px 52px rgb(1, 356, 300, 0.3),
+    -10px -10px 2px rgb(23, 67, 90, 0.1);
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+.autoType {
+  display: block;
+  color: rgb(18, 132, 132);
+  font-size: 3rem;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+}
+.aboutText {
+  text-align: center;
+  width: 400px;
+}
+.animation:hover {
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+h1 {
+  font-size: 40px;
+}
+span {
+  font-size: 40px;
+}
+.about_para {
+  line-height: 30px;
+  width: 400px;
+
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(18, 132, 132);
+}
+@keyframes myAnim {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heading {
+  font-size: 40px;
+  position: relative;
+  width: 300px;
+  text-align: center;
+  margin: 80px auto;
+  /* margin-top: 100px; */
+
+  color: rgb(18, 132, 132);
+}
+.heading_effect {
+  position: absolute;
+  /* left: -60px; */
+  left: -80px;
+  width: 90px;
+  color: rgb(14, 15, 14);
+  text-align: center;
+  padding-bottom: 9px;
+  margin: 1px;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 1px;
+  height: 30px;
+  background-color: rgba(240, 237, 239, 0.84);
+}
+
+.heading_eff {
+  position: absolute;
+  /* left: -60px; */
+  right: -80px;
+  width: 90px;
+  color: rgb(14, 15, 14);
+  text-align: center;
+  padding-bottom: 9px;
+  margin: 1px;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 1px;
+  height: 30px;
+  background-color: rgba(240, 237, 239, 0.84);
+}
+
+.all_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 60px;
+  width: 100%;
+  background-color: #faf2f2;
+  padding: 20px;
+}
+.container {
+  position: relative;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: rgb(18, 132, 132);
+  padding: 30px;
+}
+
+.container .card {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+}
+.container .card:hover {
+  height: 320px;
+}
+
+.container .card .image {
+  position: relative;
+  width: 260px;
+  height: 260px;
+
+  top: -40%;
+  left: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.container .card .image img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.container .card .content {
+  position: relative;
+  top: -140px;
+  padding: 10px 15px;
+  color: #111;
+  text-align: center;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.container .card .content_title {
+  font-size: 25px;
+  margin: 5px;
+}
+.container .card .content_text {
+  font-size: 15px;
+  margin: 5px;
+  line-height: 20px;
+}
+
+.container .card:hover .content {
+  margin-top: 30px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+/* skillss */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+}
+.first {
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.first h3 {
+  font-size: 40px;
+  padding: 5px;
+}
+.first img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+.secound {
+  width: 400px;
+}
+.secound input {
+  width: 300px;
+  border: 1px solid rgb(18, 132, 132);
+  height: 60px;
+  margin: 10px;
+  text-align: start;
+  padding: 5px;
+  outline: none;
+}
+textarea {
+  width: 300px;
+  height: 80px;
+  border: 1px solid rgb(18, 116, 116);
+  padding: 5px;
+  outline: none;
+  margin: 10px;
+}
+button {
+  width: 100px;
+  height: 40px;
+  margin: 0 20px;
+}
+button:hover {
+  transform: scale(1.2);
+  background-color: rgb(18, 116, 116);
+  transition-duration: 1s;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(18, 132, 132);
+}

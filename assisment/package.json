@@ -1,0 +1,11 @@
+{
+  "name": "assisment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js"
+  "scripts": {
+    "test": "lt --port 5500"
+  },
+  "author": "",
+  "license": "ISC"
+}
